@@ -102,7 +102,11 @@ public final class PaymentMethod: Equatable {
     
     /// The input details that should be filled in to complete the payment.
     public let inputDetails: [InputDetail]?
-    
+
+    public var groupType: String? {
+        return group?.type
+    }
+
     // MARK: - Internal
     
     internal struct Group {
