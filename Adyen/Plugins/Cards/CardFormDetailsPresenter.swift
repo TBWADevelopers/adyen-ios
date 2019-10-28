@@ -80,7 +80,7 @@ internal extension CardInputData {
         card.expiryYear = expiryYear
         card.cvc = cvc
         
-        return ADYEncrypter.encrypt(card.encode(), publicKeyInHex: publicKey)
+        return ADYEncrypter.encrypt(card.encode()!, publicKeyInHex: publicKey)
     }
     
 }
